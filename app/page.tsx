@@ -46,7 +46,7 @@ export default function ChatPage() {
     setIsLoading(true)
 
     try {
-      const response = await fetch("/api/chat", {
+      const response = await fetch("http://localhost:3500/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -93,7 +93,7 @@ export default function ChatPage() {
             <Avatar className="h-8 w-8 bg-primary">
               <span className="text-xs font-bold">AI</span>
             </Avatar>
-            <span>Gemini Pro Assistant</span>
+            <span>Kumkum ka CHATBOT</span>
           </CardTitle>
         </CardHeader>
 
