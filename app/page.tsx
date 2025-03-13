@@ -46,7 +46,7 @@ export default function ChatPage() {
     setIsLoading(true)
 
     try {
-      const response = await fetch("http://localhost:3500/api/chat", {
+      const response = await fetch("https://chat-back-yebd.onrender.com/api/chat", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -97,7 +97,7 @@ export default function ChatPage() {
           </CardTitle>
         </CardHeader>
 
-        <CardContent className="flex-1 overflow-y-auto p-4 space-y-4">
+        <CardContent className="flex-1 overflow-y-auto p-4 space--4">
           {messages.length === 0 ? (
             <div className="h-full flex flex-col items-center justify-center text-center text-muted-foreground">
               <div className="max-w-md space-y-2">
